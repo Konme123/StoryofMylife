@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>Life Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo icon.png" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/7ffd5a9ea9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <img src="images/monogatari.png" alt="kan" id="Kan">
+
+
+    <video autoplay loop muted plays-inline id="back-video">
+
+        <source src="images/video bg.mp4" type="video/mp4"> 
+
+
+   
+</video>
+
+
+
+<fos-desktop id="desktop">
+
+     
+    <audio id="myAudio" autoplay hidden  controls >
+        <source src="images/tokyo.mp3" type="audio/mpeg" >
+      </audio>
+
+
+
+
+        <fos-icon href="a1" name="My Self" image="images/mylife.png"></fos-icon>
+        <fos-icon href="a2" name="Life Story" image="images/story.png"></fos-icon>
+        <fos-icon href="a3" name="Images" image="images/camera.png"></fos-icon>
+        <fos-icon href="a4" name="Hobbies" image="images/pizza.jpg"></fos-icon>
+    
+
+        <fos-window name="a1" title="My Self">
+
+          <div class="title"> <h1>ABOUT ME</h1><p> HELLO! <br>I'M JULIUS ROBIN G. SINGCOL. <br><br> 20 YEARS OF AGE. <br><br> BORN ON JULY 13,2004</p></div>
+
+          <div class="sub"> </div>
+                
+            
+           
+        </fos-window>
+
+        <fos-window name="a2" title="Life Story">
+            <fos-bar position="top">
+                <fos-menu name="Story Of My Life">
+                    <fos-menu-item href="panel1">Chapter 01 Early Life</fos-menu-item>
+                    <fos-menu-item href="panel2">Chapter 02 Teen Life</fos-menu-item>
+                    <fos-menu-item href="panel3">Chapter 03 2024</fos-menu-item>
+                </fos-menu>
+            </fos-bar>
+            <br>
+            <br>
+            <br>
+            <br>
+            <fos-panel name="panel1" selected>
+
+                <div class="Chapter"><h1>Chapter 01 - Early Life</h1>  
+                    <p> An energetic child with unwavering optimism. Life full of <i>Hopes </i>and <i>Dreams.</i> </p>  
+                 </div>
+
+                
+            </fos-panel>
+            <fos-panel name="panel2">
+                <div class="Chapter"><h1>Chapter 02 - Teen Life</h1>  
+                    <p> Young dumb and broke ass madafaker.  </p>  
+                 </div>
+            </fos-panel>
+            <fos-panel name="panel3">
+                <div class="Chapter"><h1>Chapter 03 - 2024</h1>  
+                    <p> Check Images  </p>  
+                 </div>
+            </fos-panel>
+    
+        </fos-window>
+
+       
+
+
+        
+        <fos-window name="a3" title="Images">
+
+
+
+                <fos-icon href="i1" name="01-2024" image="images/pictures/03.jpg" fixed="True"> 01</fos-icon>
+                <fos-icon href="i2" name="02-2024" image="images/pictures/01.jpg"fixed="True">02</fos-icon>
+                <fos-icon href="i3" name="03-2024" image="images/pictures/2.png"fixed="True">03</fos-icon>
+                <fos-icon  href="i4" name="04-2024" image="images/pictures/04.jpg"fixed="True">04</fos-icon>
+                <fos-icon  href="i5" name="05-2024" image="images/pictures/05.jpg"fixed="True">05</fos-icon>
+                <fos-icon  href="i6" name="06-2024" image="images/pictures/06.jpg"fixed="True">06</fos-icon>
+                <fos-icon  href="i7" name="07-2024" image="images/pictures/07.jpg"fixed="True">07</fos-icon>
+                <fos-icon  href="i8" name="08-2024" image="images/pictures/08.jpg"fixed="True">08</fos-icon>
+  
+              
+             
+          </fos-window>
+
+
+
+          <fos-window name="i1" title="01-2024">
+
+                <img src="images/pictures/03.jpg" alt="pic1" id="pic">                  
+              
+             
+          </fos-window>
+          <fos-window name="i2" title="02-2024">
+
+            <img src="images/pictures/01.jpg" alt="pic1" id="pic">                  
+          
+         
+      </fos-window>
+      <fos-window name="i3" title="03-2024">
+
+        <img src="images/pictures/2.png" alt="pic1" id="pic">                  
+      
+     
+  </fos-window>
+  <fos-window name="i4" title="04-2024">
+
+    <img src="images/pictures/04.jpg" alt="pic1" id="pic">                  
+  
+ 
+</fos-window>
+<fos-window name="i5" title="05-2024">
+
+    <img src="images/pictures/05.jpg" alt="pic1" id="pic">                  
+  
+ 
+</fos-window>
+
+<fos-window name="i6" title="05-2024">
+
+    <img src="images/pictures/06.jpg" alt="pic1" id="pic">                  
+  
+ 
+</fos-window>
+
+<fos-window name="i7" title="05-2024">
+
+    <img src="images/pictures/07.jpg" alt="pic1" id="pic">                  
+  
+ 
+</fos-window>
+
+<fos-window name="i8" title="05-2024">
+
+    <img src="images/pictures/08.jpg" alt="pic1" id="pic">                  
+  
+ 
+</fos-window>
+
+       
+<!-- hobbies -->
+<fos-window name="a4" title="Hobbies">
+
+    <div class="title"> <h2>My Hobbies (Currently) </h2><p> 1. Novels <br><br> 2. One Piece TCG <br><br> 3. Wastin Time</p></div>
+
+    <div class="sub"> </div>
+          
+      
+     
+  </fos-window>
+
+
+
+         
+          <fos-bar>
+            <fos-menu name="O-O" >
+                <fos-menu-item href="a1"> My Self</fos-menu-item>
+                <fos-menu-item href="a2"> Life Story</fos-menu-item>
+                <fos-menu-item href="a3"> Images</fos-menu-item>
+                <fos-menu-item href="a4"> Hobbies</fos-menu-item>
+            </fos-menu>
+        </fos-bar>
+
+
+</fos-desktop>
+
+
+
+    
+
+</body>
+</html>     
+
+
+
+
+
+
+
+
+
+
+<!--  
+<div id="header">
+     
+    
+    <div class="container">
+        <div class="img-overlay">
+            
+
+        </div>
+
+        
+     
+        <div class="header-text">
+   
+    <h1>STORY OF MY<span><i> <br> </i></span></h1>
+    <h2>LIFE</h2>
+
+        </div>
+
+
+
+
+<div class="iframe">
+
+ 
+
+   
+------about?
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title1"><span>DIVERSITY</span>  IS <span>MESMERIZING</span></h1>
+                <p>The world of fish is incredibly diverse, with over 34,000 species known to science. Each fish tells a story of adaptation and survival, from the bright and playful clownfish to the majestic lionfish adorned with spines. Their diversity reminds me of the endless wonders of nature.
+                </p>
+
+               
+            </div>
+        </div>
+    </div>
+</div>
+Article 2
+
+<div id="about">
+    <div class="container">
+        <div class="row2">
+            <div class="about-col2-1">
+                <img src="" >
+            </div>
+            </div>
+            <div class="about-col2-2">
+                <h1 class="sub-title2"><i><span>PEACEFUL </span> COMPANIONS</i></h1>
+                <p class="sub1">Watching fish swim in an aquarium is like witnessing a living piece of art. Their calm movements create a serene environment that eases stress and invites mindfulness. Fish have a way of bringing peace into my day, making them wonderful companions.</p>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+Article 3
+
+<div id="about">
+    <div class="container">
+        
+        <div class="row3">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title3"><i>CONNECTION TO <span>CULTURE</span> AND <span>CUISINE</span></i></h1>
+                <p class="sub0">    Fish are deeply rooted in many cultures, symbolizing prosperity, wisdom, and even transformation. On a culinary level, they provide nourishment and flavor in dishes like sushi, fish curry, and grilled tilapia. For me, preparing and enjoying fish-based meals is a joyful connection to tradition and creativity.</p>
+
+                <img src="" >
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./scripts/script.js"></script>
+  </script>
+
+</div>
+-->
+
+
+
+
