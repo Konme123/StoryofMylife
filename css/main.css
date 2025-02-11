@@ -1,12 +1,3 @@
-body {
-  background-image: url("https://raw.githubusercontent.com/Konme123/WebMp3/main/img/bg%202.png");
-  background-size: 100%;
-
-  overflow: hidden; /* Hide scrollbars */
-  
-  font-family: "Rubik", sans-serif;
-  
-}
 
 * {
   box-sizing: border-box;
