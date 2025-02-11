@@ -335,6 +335,10 @@ class Window extends HTMLElement {
         const howMany = document.querySelectorAll("fos-window").length || 1;
         this.top = .2 * innerHeight * howMany / 5, this.left = .1 * innerWidth * howMany / 5, this.render()
     }
+
+
+
+
     render() {
         this.shadow.innerHTML = "";
         const style = document.createElement("style");
@@ -358,7 +362,7 @@ class Window extends HTMLElement {
         const buttons = document.createElement("div");
         buttons.id = "buttons";
         const _max = document.createElement("button");
-        _max.innerText = "[]", _max.part = "buttons", _max.addEventListener("click", () => {
+        _max.innerText = "□", _max.part = "buttons", _max.addEventListener("click", () => {
             this.maximize()
         });
         const close = document.createElement("button");
@@ -384,6 +388,8 @@ class Desktop extends HTMLElement {
             this.updateIcons()
         }).observe(this)
     }
+
+
     updateIcons() {
         const icons = this.querySelectorAll("fos-icon");
         for (const i of icons) i.render()
@@ -626,16 +632,6 @@ class Panel extends HTMLElement {
 customElements.define("fos-panel", Panel);
 
 
-
-let aud = document.getElementById("Audio");
-
-function setHalfVolume() { 
-    aud.volume = 0.2;
-  } 
-
-aud.onpause = function() {
-  alert("The audio has been paused");
-};
 
 
 
