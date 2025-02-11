@@ -39,7 +39,7 @@ position: fixed;
 }
 
 #link{
-
+    
     cursor: default
 }
 
@@ -53,8 +53,12 @@ position: fixed;
 
 
 /* about */
+.abotlink{
+    text-decoration: none;
+    color: #133abb;
+    cursor: default
 
-
+}
 
 
 .title h1{
@@ -66,6 +70,7 @@ position: fixed;
   font-weight: 400;
   font-style: normal;
     color: #133abb;
+    cursor: default
 }
 
 
