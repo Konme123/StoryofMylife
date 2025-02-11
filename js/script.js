@@ -565,13 +565,18 @@ class Menu extends HTMLElement {
 				:host{
 					display: inline-block;
 					cursor: default;
+
+                    
 				}
 				#menu{
 					display: `+(this.visible ? 'block' : 'none')+`;
 					position: absolute;
 					`+(this.bar ? this.bar.position : 'bottom')+`: 40px;
-					background-color: #11;
+                    background-color: #ffffff38;
+                    border: solid 1px black;
+                    border-radius: 4px;
 					padding: 1em;
+                    
 			
 					border-`+(this.bar ? this.bar.position : 'bottom')+`: 0;
 				}
@@ -587,6 +592,7 @@ class Menu extends HTMLElement {
                     object-fit: contain;
                      filter: opacity(20%);
                       transition:  0.3s;
+                      display:inline;
                 }
 
                  #logo:hover{
@@ -594,11 +600,16 @@ class Menu extends HTMLElement {
                      filter: opacity(1);
                 }
 
+                .class{
+                
+                            margin-top: -20px;
+                }
+
 
                
 			</style>
 			<div>
-				<div id="title" part="title"> <img src="${this.icon}" id="logo"> ${this.name}</div>
+				<div id="title" part="title"> <img src="${this.icon}" id="logo" onerror="this.style.display='none'"/> <a class="name"> <tr> ${this.name} </a></div>
 				<div id="menu" part="window"><slot></slot></div>
 			</div>
 		`;
@@ -640,7 +651,7 @@ class Panel extends HTMLElement {
         val ? this.setAttribute("name", val) : this.removeAttribute("name")
     }
     render() {
-        this.shadow.innerHTML = "<style>:host{display: " + (this.selected ? "block" : "none") + ";}</style><slot></slot>"
+        this.shadow.innerHTML = "<style>:host{display: " + (this.selected ? "block" : "none") + ";} </style><slot></slot>"
     }
 }
 customElements.define("fos-panel", Panel);
