@@ -570,9 +570,9 @@ class Menu extends HTMLElement {
 					display: `+(this.visible ? 'block' : 'none')+`;
 					position: absolute;
 					`+(this.bar ? this.bar.position : 'bottom')+`: 40px;
-					background-color: #AAA;
+					background-color: #11;
 					padding: 1em;
-					border: solid 1px black;
+			
 					border-`+(this.bar ? this.bar.position : 'bottom')+`: 0;
 				}
 
@@ -581,10 +581,24 @@ class Menu extends HTMLElement {
 					color: white;
 				}
 
+                #logo{
+                
+                    width:30%;
+                    object-fit: contain;
+                     filter: opacity(20%);
+                      transition:  0.3s;
+                }
+
+                 #logo:hover{
+              
+                     filter: opacity(1);
+                }
+
+
                
 			</style>
 			<div>
-				<div id="title" part="title"> ${this.name}</div>
+				<div id="title" part="title"> <img src="${this.icon}" id="logo"> ${this.name}</div>
 				<div id="menu" part="window"><slot></slot></div>
 			</div>
 		`;
