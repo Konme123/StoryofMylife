@@ -85,6 +85,9 @@ position: fixed;
     color: #13bb7b;
 }
 
+
+
+
 .title p{
     margin-top: 5%;
     margin-left: 20%;
@@ -108,7 +111,7 @@ position: fixed;
 }
 .Chapter p{
     margin-top: 5%;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-right: 20%;
     font-size: 17px;
     font-family: "Jersey 25", serif;
@@ -116,6 +119,8 @@ position: fixed;
     font-style: normal;
     color: #000000;
 }
+
+
 
 #Kan {
     width: 100vh;
@@ -142,6 +147,25 @@ position: fixed;
     max-width: 100%;
         position: absolute;
 }
+
+#pic3{
+
+    width: 20%;
+        position: absolute;
+
+    margin-left: 5%;
+}
+
+#pic4{
+
+    width: 30%;
+        position: absolute;
+
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+
 
 #logo{
 
